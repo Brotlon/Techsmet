@@ -14,7 +14,7 @@
     <script src="https://kit.fontawesome.com/9c9b337cac.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body id="scrollArea">
 
     <header id="home" class="header section">
         <div class="header__wrapper">
@@ -49,7 +49,118 @@
             </ul>
         </div>
     </nav>
-
+    <main>
+        <section id="oferta" class="services section">
+            <div class="container">
+                <h2 class="section-heading">Oferta</h2>
+                <div class="underline"></div>
+                <div class="services__offer-boxes">
+                    <div class="services__offer-box services__machining-btn scale-in-center os-animation visibility"
+                        data-animation="fadeInUp" data-delay=".1s">
+                        <a class="services__offer-link" href="#obrobka-skrawaniem">obróbka skrawaniem</a>
+                    </div>
+                    <div class="services__offer-box services__wedling-btn scale-in-center os-animation visibility"
+                        data-animation="fadeInUp" data-delay=".25s">
+                        <a class="services__offer-link" href="#spawanie">spawanie</a>
+                    </div>
+                    <div class="services__offer-box services__others-btn scale-in-center os-animation visibility"
+                        data-animation="fadeInUp" data-delay=".35s">
+                        <a class="services__offer-link" href="#pozostale">pozostałe</a>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <div id="obrobka-skrawaniem" class="machining">
+                    <div class="container">
+                        <div class="machining__wrapper">
+                            <h3 class="machining__heading--mobile">Obróbka skrawaniem</h3>
+                            <div class="machining__box">
+                                <img src="./dist/img/machining_640.jpg" alt="Maszyna do obróbki skrawaniem"
+                                    class="machining__img">
+                            </div>
+                            <div class="machining__box machining__box-right">
+                                <h3 class="machining__heading--desktop os-animation visibility"
+                                    data-animation="fadeInRight" data-delay=".2s">Obróbka skrawaniem</h3>
+                                <div class="machining__box-text os-animation visibility" data-animation="fadeInUp"
+                                    data-delay=".2s">
+                                    <p class="machining__text">Wykonujemy szeroki zakres obróbki skrawaniem z materiałów
+                                        własnych lub powierzonych.</p>
+                                    <p class="machining__text">Możliwości technologiczne naszego parku maszynowego
+                                        umożliwiają nam w zakresie obróbki mechanicznej:</p>
+                                    <ul class="machining__list">
+                                        <li class="machining__list-item"><span class="text-bold">Toczenie</span> -
+                                            dokładne toczenie, nacinanie gwintów, docieranie otworów</li>
+                                        <li class="machining__list-item"><span class="text-bold">Wiercenie i
+                                                roztaczanie</span></li>
+                                        <li class="machining__list-item"><span class="text-bold">Frezowanie</span> -
+                                            pionowe, poziome</li>
+                                        <li class="machining__list-item"><span class="text-bold">Szlifowanie</span> -
+                                            kątowe, bezkątowe, płaszczyzn i otworów</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div id="spawanie" class="welding">
+                    <div class="container">
+                        <div class="welding__wrapper">
+                            <h3 class="welding__heading--mobile">Spawanie</h3>
+                            <div class="welding__box">
+                                <img src="./dist/img/wedling_640.jpg" alt="Spawacz w trakcie spawania"
+                                    class="welding__img">
+                            </div>
+                            <div class="welding__box welding__box-right">
+                                <h3 class="welding__heading--desktop os-animation visibility"
+                                    data-animation="fadeInRight" data-delay=".2s">Spawanie</h3>
+                                <div class="welding__box-text os-animation visibility" data-animation="fadeInUp"
+                                    data-delay=".2s">
+                                    <p class="welding__text">Oferujemy metody spawania:</p>
+                                    <ul class="welding__list">
+                                        <li class="welding__list-item">Spawanie elektryczne w atmosferze argonu (<span
+                                                class="text-bold">stale niskostopowe i nierdzewne</span>)</li>
+                                        <li class="welding__list-item">Spawanie elektryczne w atmosferze argonu TIG
+                                            (<span class="text-bold">stopy AL</span>)</li>
+                                        <li class="welding__list-item">Spawanie elektryczne w osłonie CO<sub>2</sub>
+                                            (<span class="text-bold">stale niskowęglowe</span>)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div id="pozostale" class="others">
+                    <div class="container">
+                        <div class="others__wrapper">
+                            <h3 class="others__heading--mobile">Pozostałe</h3>
+                            <div class="others__box">
+                                <img src="./dist/img/others_640.jpg" alt="Części metalowe" class="others__img">
+                            </div>
+                            <div class="others__box others__box-right">
+                                <h3 class="others__heading--desktop os-animation visibility"
+                                    data-animation="fadeInRight" data-delay=".2s">Pozostałe</h3>
+                                <div class="others__box-text os-animation visibility" data-animation="fadeInUp"
+                                    data-delay=".2s">
+                                    <p class="others__text">W naszym zakładzie wykonujemy prace <span
+                                            class="text-bold">ślusarsko - montażowe.</span>
+                                    </p>
+                                    <p class="others__text">Dodatkowo zapewniamy naszym wyrobom wykonanie <span
+                                            class="text-bold">obróbki cieplnej</span> (ulepszanie, hartowanie itp.) i
+                                        <span class="text-bold">obróbki galwanicznej</span> (cynkowanie, chromowanie
+                                        itp.) w kooperacji z renomowaną hartownią i galwanizerią.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
 
 
     <script src="./dist/js/main.min.js"></script>
