@@ -1,5 +1,5 @@
-@use './animations' as *;
-@use './variables' as *;
+@use './animations'as *;
+@use './variables'as *;
 
 
 
@@ -353,9 +353,7 @@ sub {
     }
 
     &__heading {
-        line-height: normal
-
-        &--mobile {
+        line-height: normal &--mobile {
             margin-bottom: .5rem;
             font-size: 2.6rem;
             text-shadow: 2px 2px 3px rgba(0, 0, 0, .15);
@@ -395,5 +393,109 @@ sub {
         margin-bottom: .2rem;
         font-size: 1.8rem;
         line-height: 1.4;
+    }
+}
+
+
+
+// =======================  MAIN - O FIRMIE  =======================
+
+.business {
+    .container {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        background-image: url('../img/business_1280.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .underline {
+        margin-bottom: 2rem;
+        width: 100px;
+    }
+
+    &__wrapper {
+        margin: 0 auto;
+        padding: 2.5rem 2rem 1.5rem;
+        width: 90%;
+        background-color: rgba(255, 255, 255, .92);
+        box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+        overflow: hidden;
+    }
+
+    &__text {
+        margin-bottom: 1.6rem;
+        font-size: 1.8rem;
+        text-align: justify;
+    }
+}
+
+
+
+// =======================  MAIN - PARK MASZYNOWY  =======================
+
+.machine-park {
+    .container {
+        padding-top: 4.5rem;
+        padding-bottom: 6rem;
+        background-color: #fff;
+    }
+
+    .underline {
+        margin-bottom: 2.5rem;
+        width: 240px;
+    }
+
+
+    &__wrapper {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    &__text {
+        text-align: justify;
+        font-size: 1.8rem;
+    }
+
+    &__table-title {
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    &__table {
+        margin: 0 auto;
+        background-color: rgb(170, 187, 187);
+        font-size: 1.3rem;
+
+        tr {
+            transition: background-color .1s;
+
+            &:hover {
+                background-color: rgb(189, 207, 207);
+            }
+
+            td {
+                padding: 1rem;
+                border: 1px solid #888;
+            }
+
+            td:nth-of-type(odd) {
+                text-align: center;
+                font-weight: bold;
+            }
+
+            p {
+                margin-bottom: .5rem;
+                text-align: left;
+            }
+
+            ul {
+                list-style-position: inside;
+            }
+        }
     }
 }
