@@ -2,6 +2,9 @@ const navbar = document.querySelector('.navbar')
 const burgerBtn = navbar.querySelector('.navbar__burger-btn')
 const navLinksBox = navbar.querySelector('.navbar__links-box')
 
+const showMorePicturesBtn = document.querySelector('.gallery__show-all-btn')
+const hiddenPictures = document.querySelectorAll('.gallery__picture')
+
 
 
 let mobileNavTransitionTime = 351
@@ -32,9 +35,18 @@ const hideMobileNav = e => {
 }
 
 
+const showHiddenPictures = () => {
+    hiddenPictures.forEach(item => {
+        item.classList.add('show')
+    })
+    showMorePicturesBtn.classList.add('hidden')
+}
+
+
 
 burgerBtn.addEventListener('click', handleMobileNav)
 window.addEventListener('click', hideMobileNav)
+showMorePicturesBtn.addEventListener('click', showHiddenPictures)
 
 
 

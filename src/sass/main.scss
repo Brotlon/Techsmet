@@ -173,6 +173,7 @@ sub {
 
 
 
+
 // =======================  NAWIGACJA  =======================
 
 .navbar {
@@ -263,6 +264,7 @@ sub {
 
 
 
+
 // =======================  MAIN - USŁUGI  =======================
 
 .services {
@@ -338,6 +340,7 @@ sub {
 
 
 
+
 // MAIN - USŁUGI - OBRÓBKA SKRAWANIEM
 // MAIN - USŁUGI - SPRAWANIE
 // MAIN - USŁUGI - POZOSTAŁE
@@ -398,6 +401,7 @@ sub {
 
 
 
+
 // =======================  MAIN - O FIRMIE  =======================
 
 .business {
@@ -431,6 +435,7 @@ sub {
         text-align: justify;
     }
 }
+
 
 
 
@@ -496,6 +501,55 @@ sub {
             ul {
                 list-style-position: inside;
             }
+        }
+    }
+}
+
+
+
+
+// =======================  MAIN - GALERIA WYROBÓW  =======================
+
+.gallery {
+    .underline {
+        width: 250px;
+        margin-bottom: 2rem;
+    }
+
+    &__wrapper {
+        margin: 0 auto;
+        width: 90%;
+        text-align: center;
+    }
+
+    &__picture {
+        position: relative;
+        display: inline-block;
+        margin: 1rem;
+        width: 210px;
+        height: 130px;
+        background-color: #fff;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__show-all-btn {
+        display: block;
+        margin: 0 auto;
+        background-color: transparent;
+        border: none;
+        opacity: 0.55;
+        font-size: 1.8rem;
+
+        &:hover {
+            opacity: 1;
+            cursor: pointer;
         }
     }
 }
