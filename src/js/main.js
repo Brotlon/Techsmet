@@ -4,6 +4,7 @@ const navLinksBox = navbar.querySelector('.navbar__links-box')
 
 const showMorePicturesBtn = document.querySelector('.gallery__show-all-btn')
 const hiddenPictures = document.querySelectorAll('.gallery__picture')
+const footerYear = document.querySelector('.footer__year')
 
 
 
@@ -43,7 +44,14 @@ const showHiddenPictures = () => {
 }
 
 
+const handleCurrentYear = () => {
+    const year = (new Date).getFullYear();
+    footerYear.innerText = year;
+}
 
+
+
+handleCurrentYear()
 burgerBtn.addEventListener('click', handleMobileNav)
 window.addEventListener('click', hideMobileNav)
 showMorePicturesBtn.addEventListener('click', showHiddenPictures)
