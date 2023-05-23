@@ -640,10 +640,10 @@ sub {
     background-color: #333;
 
     &__box {
-        text-align: center;
+        margin-bottom: 1rem;
         color: #fff;
         font-size: 1.5rem;
-        margin-bottom: 1rem;
+        text-align: center;
     }
 
     &__line {
@@ -654,9 +654,9 @@ sub {
     }
 
     &__author {
-        text-align: center;
         color: #ddd;
         font-size: 1.4rem;
+        text-align: center;
     }
 
     &__link {
@@ -666,6 +666,175 @@ sub {
 
         &:hover {
             color: rgb(105, 181, 252);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+//////////////////////////////            MEDIA             //////////////////////////////
+
+@media (min-width: 410px) {
+    .machine-park {
+        &__table {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+
+
+
+@media (min-width: 445px) {
+    .machining {
+        .underline {
+            margin-bottom: 3rem;
+            width: 315px;
+        }
+    }
+}
+
+
+
+
+@media (min-width: 576px) {
+    .container {
+        padding: 5rem 0;
+    }
+
+
+
+    // =======================  HEADER  =======================
+
+    .header {
+        min-height: 600px;
+        background-position: 55% 20% !important;
+
+        &::after {
+            background-color: rgba(0, 0, 0, .3);
+        }
+
+        &__logo {
+            padding: 1rem 1.2rem;
+        }
+
+        &__heading-box {
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+        }
+
+        &__heading {
+            font-size: 3.6rem;
+        }
+
+        &__btn {
+            padding: .6em 1em;
+            width: 300px;
+            font-size: 2.7rem;
+        }
+    }
+
+
+
+    // =======================  MAIN - USŁUGI  =======================
+
+    .services {
+        &__offer-box {
+            width: 75%;
+        }
+    }
+
+
+
+    // MAIN - USŁUGI - OBRÓBKA SKRAWANIEM
+    // MAIN - USŁUGI - SPRAWANIE
+    // MAIN - USŁUGI - POZOSTAŁE
+
+    .machining,
+    .welding,
+    .others {
+        &__wrapper {
+            width: 79%;
+        }
+
+        &__heading {
+            &--mobile {
+                margin-bottom: .8rem;
+                font-size: 2.8rem;
+            }
+        }
+    }
+
+
+
+    // =======================  MAIN - O FIRMIE  =======================
+
+    .business {
+        .container {
+            padding-top: 8rem;
+            padding-bottom: 8rem;
+        }
+
+        &__wrapper {
+            padding-left: 3rem;
+            padding-right: 3rem;
+            width: 80%;
+        }
+    }
+
+
+
+    // =======================  MAIN - PARK MASZYNOWY  =======================
+
+    .machine-park {
+        .container {
+            padding-top: 6rem;
+            padding-bottom: 8rem;
+        }
+
+        &__wrapper {
+            width: 80%;
+        }
+
+        &__table-title {
+            font-size: 2rem;
+        }
+
+        &__table {
+            font-size: 1.4rem;
+
+            tr {
+                td {
+                    padding: 2rem 1rem;
+                }
+            }
+        }
+    }
+
+
+
+    // =======================  FOOTER  =======================
+
+    .footer {
+        &__box {
+            margin-bottom: 0;
+            text-align: left;
+        }
+
+        &__line {
+            display: none;
+        }
+
+        &__author {
+            position: absolute;
+            top: 50%;
+            right: 5%;
+            transform: translateY(-50%);
         }
     }
 }
